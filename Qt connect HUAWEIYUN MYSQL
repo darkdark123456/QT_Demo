@@ -1,0 +1,44 @@
+/*0 查看权限*/
+
+use mysql;
+select host, user, authentication_string, plugin from user; 
+
+
+
+/*1 在数据库中创建一个新用户并授权所有访问权限并刷新权限*/
+CREATE USER '新用户名'@'%' IDENTIFIED BY '密码';
+GRANT ALL PRIVILEGES ON *.* TO '用户名'@'%' WITH GRANT OPTION; //或者 update user set host = '%' where user = '用户名';
+
+FLUSH PRIVILEGES;
+
+/* 2 查看权限是否设置成功*/
+
+use mysql;
+select host, user, authentication_string, plugin from user; 
+
+
+
+
+
+/*3 在qt中使用新用户名访问云上的数据库*/
+
+    QSqlDatabase sb=QSqlDatabase::addDatabase("QMYSQL");
+    sb.setHostName("116.205.182.52"); // 华为云的公网IP
+    sb.setPort(3306);
+    sb.setDatabaseName("mysql"); // 随便填一个有的数据库
+    sb.setUserName("MENGZHENCHUAN"); //在华为云mysql上新创建的用户，具有任何访问该数据库的权限
+    sb.setPassword("123456"); // 在华为mysql上新创建的用户密码
+    bool ok=sb.open();
+    if(ok){
+        QMessageBox::information(this," ","ok");
+    }
+    else{
+        QMessageBox::warning(this,"","error");
+    }
+
+    QString str="create database usrinfo";
+    sb.exec(str);
+    
+    
+    
+    /*4登录云服务器上使用新用户登录mysql查看数据库是否创建成功*/

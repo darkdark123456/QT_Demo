@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>设置行数</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QSpinBox" name="spinBox"/>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>设置表头</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>初始化表格数据</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>插入行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>添加行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="pushButton_8">
+        <property name="text">
+         <string>自动调节列宽</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="text">
+         <string>自动调节行高</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QCheckBox" name="checkBox">
+        <property name="text">
+         <string>表格可编辑</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QCheckBox" name="checkBox_4">
+        <property name="text">
+         <string>间隔行底色</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QCheckBox" name="checkBox_2">
+        <property name="text">
+         <string>显示行表头</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QCheckBox" name="checkBox_3">
+        <property name="text">
+         <string>显示列表头</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QRadioButton" name="radioButton">
+        <property name="text">
+         <string>行选择</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>删除当前行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="text">
+         <string>单元格选择</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <row>
+         <property name="text">
+          <string>学生1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>学生2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>学生3</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>姓名</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>性别</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>出生日期</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>民族</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>是否党员</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>july</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>女</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>1996-12-06</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>汉</string>
+         </property>
+        </item>
+        <item row="0" column="4">
+         <property name="text">
+          <string>党员</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="checkState">
+          <enum>Checked</enum>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>mark</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>男</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>1999-10-20</string>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="text">
+          <string>汉</string>
+         </property>
+        </item>
+        <item row="1" column="4">
+         <property name="text">
+          <string>党员</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="checkState">
+          <enum>Checked</enum>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>hunny</string>
+         </property>
+        </item>
+        <item row="2" column="1">
+         <property name="text">
+          <string>女</string>
+         </property>
+        </item>
+        <item row="2" column="2">
+         <property name="text">
+          <string>2000-10-10</string>
+         </property>
+        </item>
+        <item row="2" column="3">
+         <property name="text">
+          <string>满</string>
+         </property>
+        </item>
+        <item row="2" column="4">
+         <property name="text">
+          <string>党员</string>
+         </property>
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="checkState">
+          <enum>Checked</enum>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="plainTextEdit"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>742</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

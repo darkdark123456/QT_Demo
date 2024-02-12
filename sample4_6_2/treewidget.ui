@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>treeWidget</class>
+ <widget class="QMainWindow" name="treeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>811</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>treeWidget</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>516</width>
+         <height>505</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>811</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>目录树</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>操作</string>
+    </property>
+    <addaction name="actAddFile"/>
+    <addaction name="separator"/>
+    <addaction name="actAddDirectory"/>
+    <addaction name="separator"/>
+    <addaction name="actDeleteItem"/>
+    <addaction name="separator"/>
+    <addaction name="actBigger"/>
+    <addaction name="separator"/>
+    <addaction name="actSmaller"/>
+    <addaction name="separator"/>
+    <addaction name="actReallSize"/>
+    <addaction name="separator"/>
+    <addaction name="actFitWidth"/>
+    <addaction name="separator"/>
+    <addaction name="actFitHigh"/>
+    <addaction name="separator"/>
+    <addaction name="actScanItems"/>
+    <addaction name="separator"/>
+    <addaction name="actDockVisible"/>
+    <addaction name="separator"/>
+    <addaction name="actDockFloat"/>
+    <addaction name="separator"/>
+    <addaction name="actDisplay"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTreeWidget" name="treeWidget_2">
+       <column>
+        <property name="text">
+         <string extracomment="文件夹">图片文件</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>file.ico</normaloff>
+          <selectedoff>:/image/file.ico</selectedoff>file.ico</iconset>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string extracomment="文件夹">分组1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string extracomment="文件夹">分组2</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actAddFile">
+   <property name="icon">
+    <iconset>
+     <normaloff>file.ico</normaloff>file.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加文件</string>
+   </property>
+   <property name="toolTip">
+    <string>添加文件</string>
+   </property>
+  </action>
+  <action name="actAddDirectory">
+   <property name="icon">
+    <iconset>
+     <normaloff>add.ico</normaloff>add.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加目录</string>
+   </property>
+   <property name="toolTip">
+    <string>添加目录</string>
+   </property>
+  </action>
+  <action name="actDeleteItem">
+   <property name="icon">
+    <iconset>
+     <normaloff>delete.ico</normaloff>delete.ico</iconset>
+   </property>
+   <property name="text">
+    <string>删除节点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除节点</string>
+   </property>
+  </action>
+  <action name="actBigger">
+   <property name="icon">
+    <iconset>
+     <normaloff>bigger.ico</normaloff>bigger.ico</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+   <property name="toolTip">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actSmaller">
+   <property name="icon">
+    <iconset>
+     <normaloff>smaller.ico</normaloff>smaller.ico</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+   <property name="toolTip">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actReallSize">
+   <property name="icon">
+    <iconset theme=":/image/realSize.ico">
+     <normaloff>realSize.ico</normaloff>realSize.ico</iconset>
+   </property>
+   <property name="text">
+    <string>实际大小</string>
+   </property>
+   <property name="toolTip">
+    <string>实际大小</string>
+   </property>
+  </action>
+  <action name="actFitWidth">
+   <property name="icon">
+    <iconset>
+     <normaloff>fitWidth.ico</normaloff>fitWidth.ico</iconset>
+   </property>
+   <property name="text">
+    <string>适合宽度</string>
+   </property>
+   <property name="toolTip">
+    <string>适合宽度</string>
+   </property>
+  </action>
+  <action name="actFitHigh">
+   <property name="icon">
+    <iconset>
+     <normaloff>fitHeight.ico</normaloff>fitHeight.ico</iconset>
+   </property>
+   <property name="text">
+    <string>适合高度</string>
+   </property>
+   <property name="toolTip">
+    <string>适合高度</string>
+   </property>
+  </action>
+  <action name="actScanItems">
+   <property name="text">
+    <string>遍历节点</string>
+   </property>
+   <property name="toolTip">
+    <string>遍历节点</string>
+   </property>
+  </action>
+  <action name="actDockVisible">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>窗体可见</string>
+   </property>
+   <property name="toolTip">
+    <string>窗体可见</string>
+   </property>
+  </action>
+  <action name="actDockFloat">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>窗体浮动</string>
+   </property>
+   <property name="toolTip">
+    <string>窗体浮动</string>
+   </property>
+  </action>
+  <action name="actDisplay">
+   <property name="text">
+    <string>显示图片</string>
+   </property>
+   <property name="toolTip">
+    <string>显示图片</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

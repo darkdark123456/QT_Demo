@@ -1,0 +1,5 @@
+QToolButton{
+	color: rgb(170, 85, 0);
+	border-radius: 10px;
+	border: 2px solid #999
+}

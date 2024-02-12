@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>background.png</file>
+        <file>love.png</file>
+        <file>love2.png</file>
+        <file>love3.jpg</file>
+        <file>icon-20@2x-ipad.png</file>
+    </qresource>
+</RCC>

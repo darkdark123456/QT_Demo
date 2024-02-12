@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>add.ico</file>
+        <file>clear.ico</file>
+        <file>delete.ico</file>
+        <file>exit.ico</file>
+        <file>insert.ico</file>
+        <file>initlist.ico</file>
+        <file>select.ico</file>
+        <file>button.ico</file>
+    </qresource>
+</RCC>
